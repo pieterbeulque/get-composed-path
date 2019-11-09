@@ -10,7 +10,7 @@
     "build": "microbundle",
     "dev": "microbundle watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+    "release": "git commit --allow-empty -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
