@@ -1,0 +1,34 @@
+{
+  "name": "get-composed-path",
+  "version": "0.0.1",
+  "description": "Ponyfill for Event.getComposedPath()",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pieterbeulque/get-composed-path.git"
+  },
+  "keywords": [
+    "ponyfill",
+    "composed-path",
+    "event",
+    "path"
+  ],
+  "author": "Pieter Beulque <pieterbeulque@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pieterbeulque/get-composed-path/issues"
+  },
+  "homepage": "https://github.com/pieterbeulque/get-composed-path#readme",
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
+}
